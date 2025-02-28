@@ -21,12 +21,49 @@
         .font-poppins{
             font-family: "Poppins", sans-serif;
         }
+        .bg-primary{
+            background-color: #F4F7FF;
+        }
+        .text-color-primary{
+            color: #00303C;
+        }
     </style>
 
 </head>
 
-<body>
+<body class="font-poppins bg-primary min-h-[100vh] pt-6">
+    <header>
+        <nav class="container mx-auto p-6 bg-white flex justify-between items-center rounded-2xl">
+            <!-- logo  -->
+            <div class="flex items-center">
+                <img src="assets/imagess/logo.png" alt="">
+                <h1 class="pl-2 text-4xl font-light text-color-primary">DEV<span class="font-bold">Board</span></h1>
+            </div>
 
+
+            
+            <div class="flex gap-9 items-center">
+
+                <!-- counter  -->
+                <div class="flex gap-4 items-center bg-primary p-4 rounded-[32px]">
+                    <div>
+                        <img src="assets/imagess/checkbox.png" alt="">                        
+                    </div>
+                    <h2 class="text-[2rem] font-bold text-[#1E1E1E]">0</h2>
+                </div>
+
+                <!-- rgb btn  -->
+                <div>
+                    <button>
+                        <img src="assets/imagess/theme-btn.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
