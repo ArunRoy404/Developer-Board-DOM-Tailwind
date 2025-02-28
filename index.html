@@ -45,22 +45,22 @@
 </head>
 
 <body class="font-poppins bg-primary min-h-[100vh] pt-6">
-    <header>
+    <header class="px-5 md:p-0">
         <nav class="container mx-auto p-6 bg-white rounded-2xl flex justify-between items-center">
             <!-- logo  -->
             <div class="flex items-center">
-                <img src="assets/imagess/logo.png" alt="">
-                <h1 class="pl-2 text-4xl font-light text-color-primary">DEV<span class="font-bold">Board</span></h1>
+                <img class="w-8 md:w-auto" src="assets/imagess/logo.png" alt="">
+                <h1 class="pl-2 text-xl md:text-4xl font-light text-color-primary">DEV<span class="font-bold">Board</span></h1>
             </div>
 
 
 
-            <div class="flex gap-9 items-center">
+            <div class="flex gap-4 md:gap-9 items-center">
 
                 <!-- counter  -->
                 <div class="flex gap-4 items-center bg-primary px-4 py-2 rounded-[32px]">
                     <div>
-                        <img src="assets/imagess/checkbox.png" alt="">
+                        <img class="w-5 md:w-auto" src="assets/imagess/checkbox.png" alt="">
                     </div>
                     <h2 id="increment-done" class="text-[2rem] font-bold text-[#1E1E1E]">0</h2>
                 </div>
@@ -77,13 +77,13 @@
     </header>
 
 
-    <main class="container mx-auto mt-5 grid grid-cols-4 gap-6 text-color-primary pb-16">
+    <main class="px-5 md:p-0 container mx-auto mt-5 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6 text-color-primary pb-16">
 
         <!-- board section  -->
-        <div class="col-span-3 bg-white rounded-2xl">
+        <div class="md:col-span-2 xl:col-span-3 bg-white rounded-2xl">
 
             <!-- board nav section  -->
-            <div class="p-6 flex justify-between gap-6 pb-8" style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
+            <div class="p-6 space-y-6 xl:space-y-0 xl:flex xl:justify-between xl:gap-6 pb-8" style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
                 <!-- task assigned  -->
                 <div class="bg-primary p-8 rounded-xl flex items-center">
                     <!-- img  -->
@@ -132,7 +132,7 @@
 
 
             <!-- board task section  -->
-            <div id="task-container" class="p-6 grid lg:grid-cols-3 gap-9 pt-8">
+            <div id="task-container" class="p-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-9 pt-8">
 
 
                 <!-- card 1  -->
