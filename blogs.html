@@ -73,95 +73,130 @@
         </div>
 
         <!-- blogs container  -->
-        <div class="space-y-6">
+        <div class="space-y-6 pb-10">
 
 
             <!-- blog 1 -->
-            <div class="container mx-auto p-6 bg-white rounded-2xl">
+            <div class="container mx-auto bg-white rounded-2xl">
 
                 <!-- Question -->
-                <div class="text-xl text-color-primary font-black pb-4 mb-4"
+                <div class="text-xl text-color-primary font-black p-6 pb-4 mb-4"
                     style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
                     <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
                 </div>
 
                 <!-- Answer  -->
-                <div class="opacity-80">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt saepe error et eius temporibus
-                        sit
-                        voluptatem iure ducimus modi aperiam! lorem40</p>
+                <div class="opacity-80 p-6 pt-0">
+                    <p>
+                        There are many ways to select an element in the DOM: <br>
+                        1. using getElementById(id) <br>
+                        2. using querySelector('class-name') <br>
+                        <br>
+                        But getElementsByClassName('class-name') and querySelectorAll('class-name')
+                        <br>returns list of same class elements
+                    </p>
                 </div>
             </div>
 
 
-            <!-- blog 1 -->
-            <div class="container mx-auto p-6 bg-white rounded-2xl">
+            <!-- blog 2 -->
+            <div class="container mx-auto bg-white rounded-2xl">
 
                 <!-- Question -->
-                <div class="text-xl text-color-primary font-black pb-4 mb-4"
+                <div class="text-xl text-color-primary font-black p-6 pb-4 mb-4"
                     style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
-                    <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
                 </div>
 
                 <!-- Answer  -->
-                <div class="opacity-80">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt saepe error et eius temporibus
-                        sit
-                        voluptatem iure ducimus modi aperiam! lorem40</p>
+                <div class="opacity-80 p-6 pt-0">
+                    <p>
+                        difference between innerHTML, innerText, and textContent: <br>
+                        1. innerHtml = returns all the text along with the html tag and hidden text or comment inside an
+                        element. <br>
+                        2. innText = only returns the visible text inside an element <br>
+                        3. textContent = returns both visible and hidden texts only of inside an element
+                    </p>
                 </div>
             </div>
 
 
-            <!-- blog 1 -->
-            <div class="container mx-auto p-6 bg-white rounded-2xl">
+            <!-- blog 3 -->
+            <div class="container mx-auto bg-white rounded-2xl">
 
                 <!-- Question -->
-                <div class="text-xl text-color-primary font-black pb-4 mb-4"
+                <div class="text-xl text-color-primary font-black p-6 pb-4 mb-4"
                     style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
-                    <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1>Question-3: What is event delegation in the DOM?</h1>
                 </div>
 
                 <!-- Answer  -->
-                <div class="opacity-80">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt saepe error et eius temporibus
-                        sit
-                        voluptatem iure ducimus modi aperiam! lorem40</p>
+                <div class="opacity-80 p-6 pt-0">
+                    <p>
+                        Event Delegation: <br>
+                        The process of adding event listener in parent of elements instead of adding event in every
+                        child element is called event delegation.
+                        <br><br>
+                        since a triggered element returns to its parent element anyways, its more efficiant to add event
+                        listener in parent for capturing the event.target .
+                        <br><br>
+                        Event Delegation is used for: <br>
+                        1. Less memory consupmtion <br>
+                        2. no need to add event listener to all child element <br>
+                        etc.
+                    </p>
                 </div>
             </div>
 
 
-            <!-- blog 1 -->
-            <div class="container mx-auto p-6 bg-white rounded-2xl">
+            <!-- blog 4 -->
+            <div class="container mx-auto bg-white rounded-2xl">
 
                 <!-- Question -->
-                <div class="text-xl text-color-primary font-black pb-4 mb-4"
+                <div class="text-xl text-color-primary font-black p-6 pb-4 mb-4"
                     style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
-                    <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1>Question-4: What is event bubbling in the DOM?</h1>
                 </div>
 
                 <!-- Answer  -->
-                <div class="opacity-80">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt saepe error et eius temporibus
-                        sit
-                        voluptatem iure ducimus modi aperiam! lorem40</p>
+                <div class="opacity-80 p-6 pt-0">
+                    <p>
+                        Event Bubbling: <br>
+                        When an event is triggered, after capturing the event target the event get propagate or returns
+                        to the
+                        parent element and triggers the parent element. and again it propagates to the next parent
+                        element and triggers it all the way to root element.
+                        <br><br>
+                        This process is call event bubbling, where all the parent elements of the event gets triggered to the root element.
+                        One by one.
+                    </p>
                 </div>
             </div>
 
 
-            <!-- blog 1 -->
-            <div class="container mx-auto p-6 bg-white rounded-2xl">
+            <!-- blog 5 -->
+            <div class="container mx-auto bg-white rounded-2xl">
 
                 <!-- Question -->
-                <div class="text-xl text-color-primary font-black pb-4 mb-4"
+                <div class="text-xl text-color-primary font-black p-6 pb-4 mb-4"
                     style="border-bottom: 2px dashed rgba(55, 82, 253, 0.2);">
-                    <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <h1>Question-5: How do you create, add, and remove elements using JavaScript?</h1>
                 </div>
 
                 <!-- Answer  -->
-                <div class="opacity-80">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt saepe error et eius temporibus
-                        sit
-                        voluptatem iure ducimus modi aperiam! lorem40</p>
+                <div class="opacity-80 p-6 pt-0">
+                    <p>
+                        Create, Add and remove elements:
+                        <br> <br>
+                        1. first create an element using document.createElement('tag').
+                            Then add innerText ot innerHtml of the the newly created element.
+                        <br>
+                        2. using element.append(child) where child = new element, we can add the new element in the document where we want.
+                        <br>
+                        3. to remove element we can use this methods <br>
+                        &emsp;a. parent.remove() removes all the child elements of an element <br>
+                        &emsp;b. parent.removeChild(child) to remove a specific element <br>
+                    </p>
                 </div>
             </div>
 
