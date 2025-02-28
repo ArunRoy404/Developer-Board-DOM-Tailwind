@@ -44,24 +44,24 @@ function setRGB() {
 
 // increment done tasks
 function incrementDone() {
-    const counter = parseInt(document.getElementById('increment-done').innerText)
-    document.getElementById('increment-done').innerText = counter + 1
+    const counter = parseInt(document.getElementById('increment-done').innerText);
+    document.getElementById('increment-done').innerText = counter + 1;
 }
 
 // add activity history 
 function addHistory(title) {
-    const time = new Date()
-    const currentTime = time.toLocaleTimeString()
-    const message = "You have Complete The Task " + title + " at " + currentTime
-    const div = document.createElement('div')
+    const time = new Date();
+    const currentTime = time.toLocaleTimeString();
+    const message = "You have Complete The Task " + title + " at " + currentTime;
+    const div = document.createElement('div');
     div.innerHTML = `
     <div class="bg-primary p-[10px] rounded-lg">
             <p class="text-black opacity-70">
              ${message}
         </p>
     </div>
-    `
-    document.getElementById('history-container').appendChild(div)
+    `;
+    document.getElementById('history-container').appendChild(div);
 }
 
 // clear history 
@@ -73,21 +73,21 @@ document.getElementById('clear-history-btn').addEventListener('click',function()
 const allTaskButtons = document.querySelectorAll('.task .task-btn')
 for (const taskBtn of allTaskButtons) {
     taskBtn.addEventListener('click', function (event) {
-        let taskDiv = event.target.closest('div')
-        let counter = 10
+        let taskDiv = event.target.closest('div');
+        let counter = 10;
         while (!taskDiv.classList.contains('task') && counter--) {
-            taskDiv = taskDiv.parentElement
+            taskDiv = taskDiv.parentElement;
         }
-        const id = taskDiv.id
-        const taskTitle = document.querySelector('#'+id+' .task-title').innerText
+        const id = taskDiv.id;
+        const taskTitle = document.querySelector('#'+id+' .task-title').innerText;
 
-        alert('Board Updated Successfully')
-        event.target.disabled = true
-        incrementDone()
-        addHistory(taskTitle)
-        const remainedTask = countTask()
+        alert('Board Updated Successfully');
+        event.target.disabled = true;
+        incrementDone();
+        addHistory(taskTitle);
+        const remainedTask = countTask();
         if(!remainedTask){
-            alert('congrats!!! You have completed all the current task')
+            alert('congrats!!! You have completed all the current task');
         }
     })
 }
